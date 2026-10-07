@@ -1,7 +1,19 @@
 # CLT Visualization
 
-This Python project will simulate and visualize the Central Limit Theorem (CLT). It will repeatedly draw random samples, calculate their means, and display how those means form a distribution.
+This project uses a simple Python simulation to illustrate the Central Limit Theorem.
 
-The Central Limit Theorem says that when we take many samples of the same size from a population, the distribution of the sample means tends to become approximately normal (bell-shaped), even if the original population is not normally distributed.
+The population distribution is exponential, which is right-skewed. For each sample size (`n = 5`, `30`, and `100`), the program repeatedly draws samples and calculates their means. The histograms show that the distribution of the sample mean becomes more normal as the sample size increases.
 
-The simulation will be implemented in `clt_simulation.py`, which will generate a chart showing this effect.
+## Install dependencies
+
+```bash
+python3 -m pip install -r requirements.txt
+```
+
+## Run the simulation
+
+```bash
+python3 clt_simulation.py
+```
+
+Running the script displays the chart and saves it as `clt_visualization.png` in the project root. As the sample size increases, the distribution of sample means becomes more similar to a normal distribution.
